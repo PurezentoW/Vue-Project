@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+</head>
+<style>
+  .class1{
+    background: #444;
+    color: #eee;
+  }
+</style>
+<body>
+<div id="vue_det">
+  <h1>site : {{site}}</h1>
+  <h1>url : {{url}}</h1>
+  <h1>{{details()}}</h1>
+  <div id="app1">
+    <p>{{ message1 }}</p>
+  </div>
+
+  <div id="app2">
+    <br><br>
+    <div v-bind:class="{'class1': use}">
+      <label for="r1" v-bind:class="{'class1': use}">修改颜色</label><input type="checkbox" v-model="use" id="r1">
+    </div>
+
+    {{5+5}}<br>
+    {{ ok ? 'YES' : 'NO' }}<br>
+    {{ message2.split('').reverse().join('') }}
+    <div v-bind:id="'list-' + id">?</div>
+
+
+
+    <p v-if="seen">现在你看到我了</p>
+  </div>
+
+</div>
+<script type="text/javascript">
+  var vm = new Vue({
+    el: '#vue_det',
+    data: {
+      site: "老王教程",
+      url: "www.google.com",
+      alexa: "10000",
+      message1: "什么鬼",
+      use: false,
+      ok: true,
+      message2: 'RUNOOB',
+      id : 1,
+      seen: true
+    },
+    methods: {
+      details: function() {
+        return  this.site + " - 学的不仅是技术，更是梦想！";
+      }
+    }
+  })
+</script>
+</body>
+</html>
