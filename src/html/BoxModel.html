@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>菜鸟教程(runoob.com)</title>
+  <style>
+    div.box {
+      background-color: lightgrey;
+      width: 600px;
+      margin: 50px 50px;
+      padding: 10px;
+      border: 10px solid green;
+      outline:green dotted thick;
+    }
+    h1.hidden {visibility:hidden;}
+    p.pos_fixed
+    {
+      position:fixed;
+      top:30px;
+      left: 500px;
+    }
+    h2.absolute
+    {
+      position:absolute;
+      left:200px;
+      top:6px;
+    }
+    div.sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      padding: 5px;
+      background-color: #cae8ca;
+      border: 2px solid #4CAF50;
+    }
+  </style>
+</head>
+<body>
+
+<h2>盒子模型演示</h2>
+
+<div class="sticky">我是粘性定位!</div>
+<p>CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。</p>
+
+<div class="box">这里是盒子内的实际内容。有 25px 内间距，25px 外间距、25px 绿色边框。</div>
+
+<h1 class="hidden">这是一个隐藏标题</h1>
+<!--相对于浏览器，页面滚动他还是在那里-->
+<p class="pos_fixed">相对于浏览器，页面滚动他还是在那里</p>
+<!--相对于页面，滚动了就走了-->
+<h2 class="absolute">相对于页面，滚动了就走了</h2>
+
+<p>滚动我</p>
+<p>来回滚动我</p>
+<p>滚动我</p>
+<p>来回滚动我</p>
+<p>滚动我</p>
+<p>来回滚动我</p>
+<p>滚动我</p>
+<p>来回滚动我</p>
+<p>滚动我</p>
+<p>来回滚动我</p>
+<p>滚动我</p>
+<p>来回滚动我</p>
+<p>滚动我</p>
+<p>来回滚动我</p>
+<p>滚动我</p>
+<p>来回滚动我</p>
+<p>滚动我</p>
+<p>来回滚动我</p>
+<p>滚动我</p>
+<p>来回滚动我</p>
+<p>滚动我</p>
+</body>
+</html>

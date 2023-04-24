@@ -8,26 +8,52 @@
       text-align: center;
       text-decoration: none;
     }
+    a:link {color:#000000;}      /* 未访问链接*/
+    a:visited {color:#00FF00;}  /* 已访问链接 */
+    a:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
+    a:active {color:#0000FF;}  /* 鼠标点击时 */
     a.href {
       /*text-decoration: none;*/
       /*text-decoration:overline;*/
       text-decoration:line-through;
       text-decoration:underline;
       text-transform:uppercase;
+      /*color:#000000;*/
     }
     p.date {
       text-align: right;
-
+      color: blueviolet;
     }
 
     p.main {
       text-align: justify;
-      text-indent:50px;
+      text-indent:30px;
+      color: #2c3e50;
     }
     p.yingyu{
-      font-family:微软雅黑 ,"Times New Roman" ;
-      font-style:oblique;
-      font-size:100%;;
+      font-family:"Comic Sans MS", cursive, sans-serif;
+      font-style:italic;
+      font-size: 100%;
+      /*background-color: #444444;*/
+      text-transform: capitalize;
+    }
+    ul.a {list-style-type:circle; }
+    ol.c {list-style-type:upper-roman;}
+    body {
+      background-color:#b0c4de;
+      /*background-image: url('image/image1.jpg');*/
+    }
+    table
+    {
+      border-collapse:collapse;width:100%;
+    }
+    th, td
+    {
+      height:50px;
+      text-align:right;
+      vertical-align:bottom;
+      border:2px solid green;
+      color:white;
     }
   </style>
 </head>
@@ -36,10 +62,40 @@
 <h1>CSS text-align 实例</h1>
 <p >链接到: <a class="href" href="http://www.runoob.com/">runoob.com</a></p>
 <p class="date">2015 年 3 月 14 号</p>
-<p class="yingyu">sjaidjsiadjisaidsaj sjdisajdias sjdias  dsjai </p>
+<p class="yingyu">Removed all restrictions on downloads, you can download any video</p>
 <p class="main">
   “当我年轻的时候，我梦想改变这个世界；当我成熟以后，我发现我不能够改变这个世界，我将目光缩短了些，决定只改变我的国家；当我进入暮年以后，我发现我不能够改变我们的国家，我的最后愿望仅仅是改变一下我的家庭，但是，这也不可能。当我现在躺在床上，行将就木时，我突然意识到：如果一开始我仅仅去改变我自己，然后，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情；然后，谁知道呢?我甚至可能改变这个世界。”</p>
 <p><b>注意：</b> 重置浏览器窗口大小查看 &quot;justify&quot; 是如何工作的。</p>
+<p>无序列表实例:</p>
+
+<ul class="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>有序列表实例:</p>
+
+<ol class="c">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
 </body>
 
 </html>
