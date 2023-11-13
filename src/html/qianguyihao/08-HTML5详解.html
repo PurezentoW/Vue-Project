@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<form action="">
+  <fieldset>
+    <legend>表单属性</legend>
+    <label for="">
+      用户名：<input type="text" placeholder="例如：smyhvae" autofocus name="userName" autocomplete="on" required id = "user_input"/>
+    </label>
+
+    <label for="">
+      电话：<input type="tel" pattern="1\d{10}"/>
+    </label>
+    <label for="">
+      用户名输入的次数统计：<input type="number" min="1" max="10" value="1" id="input_count"/>
+    </label>
+    <label for="">
+      音频：<audio style="display: block ;width: 100%" src="http://www.runoob.com/try/demo_source/movie.ogg" autoplay controls loop></audio>
+    </label>
+    <label>
+      视频：<video style="display: block ;width: 100%" src="http://www.runoob.com/try/demo_source/movie.ogg" autoplay controls loop></video>
+    </label>
+    <label for="">
+      multiple的表单: <input type="file" multiple>
+    </label>
+
+    <!-- 上传文件-->
+    <input type="file" name="file" multiple/>
+
+    <input type="submit"/>
+  </fieldset>
+</form>
+
+</body>
+<style>
+  form {
+    width: 100%;
+    /* 最大宽度*/
+    max-width: 640px;
+    /* 最小宽度*/
+    min-width: 320px;
+    margin: 0 auto;
+    font-family: "Microsoft Yahei";
+    font-size: 20px;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+  }
+</style>
+<script>
+
+  var txt1 = document.getElementById('user_input');
+  var txt2 = document.getElementById('input_count');
+  var num = 0;
+
+  txt1.oninput = function () {  //用户输入时触发
+
+    num++;  //用户每输入一次，num自动加 1
+    //将统计数显示在txt2中
+    txt2.value = num;
+  }
+  txt1.oninvalid = function () {  //验证不通过时触发
+    this.setCustomValidity('亲，请输入正确哦');  //设置验证不通过时的提示文字
+  }
+
+</script>
+</html>
