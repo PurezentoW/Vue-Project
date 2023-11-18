@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body bgcolor="white">
+<p>
+  <h1>CSS属性：字体属性和文本属性</h1>
+  <h2>字体属性</h2>
+  <p style="font-size: 20px;line-height: 22px;font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;font-style: italic;font-weight: bold;font-variant: small-caps">
+    字体css
+    <br>
+    <strong>font-family</strong>：指定字体系列。
+    <br>
+    <strong>font-size</strong>：指定字体大小。
+    <br>
+    <strong>font-weight</strong>：指定字体粗细。
+    <br></p>
+
+<p style="font:italic normal 20px/2px '华文彩云' ,'Microsoft YaHei', '微软雅黑',sans-serif"> 字体属性</p>
+<div style="font-weight: normal;letter-spacing: 10px">文本属性</div>
+<ul>
+  列表属性
+  <li style="list-style-type: circle">列表属性</li>
+  <li style="list-style-type: disc">列表属性</li>
+  <li style="list-style-type: square">列表属性</li>
+</ul>
+<img src="quantou.png" style="filter:gray()">
+</body>
+<style>
+  li{
+    list-style-image: url("./quantou.png");
+    margin-left: 150px;
+  }
+  li::before {
+    content: "😀";
+    margin-right: 5px;
+  }
+
+</style>
+</html>
