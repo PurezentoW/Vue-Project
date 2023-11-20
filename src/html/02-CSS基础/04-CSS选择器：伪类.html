@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<a href="http://www.baidu.com">百度</a>
+<br>
+<input type="text" name="">
+<br>
+<label>伪类</label>
+<br>
+<table>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</body>
+<style>
+  /*让超链接点击之前是红色*/
+  a:link{
+    color:red;
+  }
+
+  /*让超链接点击之后是绿色*/
+  a:visited{
+    color:orange;
+  }
+
+  /*鼠标悬停，放到标签上的时候*/
+  a:hover{
+    color:green;
+  }
+
+  /*鼠标点击链接，但是不松手的时候*/
+  a:active{
+    color:black;
+  }
+  input:focus{
+    background-color: #cae8ca;
+    border: 3px solid rgb(255, 126, 0);
+    color: #0000FF;
+    outline: none; /* 清除默认的外部框样式 */
+  }
+  table{
+    border-collapse: collapse;
+    border: 1px solid  rgb(231,123,2);
+    width: 300px;
+    height: 300px;
+  }
+  table td{
+    border: 1px solid  rgb(231,123,2);
+    width: 100px;
+    height: 100px;
+  }
+  td:hover{
+    background-color: #7ec5c8;
+  }
+</style>
+</html>
