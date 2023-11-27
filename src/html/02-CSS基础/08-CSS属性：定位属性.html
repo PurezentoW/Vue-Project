@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+
+    body {
+      margin: 0;
+    }
+
+    div {
+      background-color: #4CAF50;
+    }
+
+    .div1 {
+      width: 200px;
+      height: 200px;
+      border: 1px solid red;
+    }
+
+    .div2 {
+      position: relative; /*相对定位：相对于自己原来的位置*/
+      left: 100px; /*横坐标：正值表示向右偏移，负值表示向左偏移*/
+      top: 50px; /*纵坐标：正值表示向下偏移，负值表示向上偏移*/
+
+      width: 200px;
+      height: 200px;
+      border: 1px solid red;
+      z-index: 2;
+    }
+
+    .div3 {
+      position: absolute;
+      left: 100px;
+      top: 10px;
+      width: 200px;
+      height: 200px;
+      border: 1px solid red;
+    }
+
+    .div4 {
+      position: absolute;
+      left: 200px;
+      top: 30px;
+      width: 200px;
+      height: 200px;
+      border: 1px solid red;
+    }
+
+    .div5 {
+      position: relative;
+      left: 20px;
+      top: -20px;
+      width: 20px;
+      height: 20px;
+      border: 1px solid red;
+
+    }
+    .backtop{
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      background-color: gray;
+      text-align: center;
+      line-height:30px;
+      color:white;
+      text-decoration: none;   /*去掉超链接的下划线*/
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="div1">标准流</div>
+<div class="div2">相对定位</div>
+<div class="div3">绝对定位</div>
+<div class="div4">
+  <div class="div5"></div>
+  子绝父相
+</div>
+<div class="backtop">固定定位</div>
+</body>
+</html>
